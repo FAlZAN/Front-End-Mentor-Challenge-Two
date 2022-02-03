@@ -10,12 +10,6 @@ sendBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-if (window.innerWidth < 375) {
-  console.log("this is mobile device");
-} else if (window.innerWidth > 375) {
-  console.log("this is not a mobile device");
-}
-
 fetch("data.json")
   .then((res) => res.json())
   .then((data) => {
