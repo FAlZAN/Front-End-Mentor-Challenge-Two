@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive comments section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <!-- Pull dynamic content from the data.json file -->
+    <div class="container">
+      <template class="mobile-comment-template">
+        <div class="comment-card">
+          <div class="comment-content">
+            <section class="user-detail">
+              <span class="user-avatar">
+                <img src="" alt="user avatar" />
+              </span>
+              <span class="user-name"></span>
+              <span class="you-tag hide">you</span>
+              <span class="createdAt"></span>
+              <span class="D-E-Btn hide">
+                <span class="delete-btn">
+                  <img src="./images/icon-delete.svg" alt="delete button" />
+                  Delete
+                </span>
+                <span class="edit-btn">
+                  <img src="./images/icon-edit.svg" alt="edit button" />
+                  Edit
+                </span>
+              </span>
+              <span class="reply-btn">
+                <img src="/images/icon-reply.svg" alt="reply button" />
+                Reply
+              </span>
+            </section>
+
+            <section class="comment"></section>
+
+            <section class="comment-action">
+              <span class="score">
+                <span class="plus-btn">
+                  <img src="/images/icon-plus.svg" alt="plus button" />
+                </span>
+                <span class="score-count"></span>
+                <span class="minus-btn">
+                  <img src="/images/icon-minus.svg" alt="minus button" />
+                </span>
+              </span>
+
+              <span class="D-E-Btn hide">
+                <span class="delete-btn">
+                  <img src="./images/icon-delete.svg" alt="delete button" />
+                  Delete
+                </span>
+                <span class="edit-btn">
+                  <img src="./images/icon-edit.svg" alt="edit button" />
+                  Edit
+                </span>
+              </span>
+
+              <span class="reply-btn">
+                <img src="/images/icon-reply.svg" alt="reply button" />
+                Reply
+              </span>
+            </section>
+          </div>
+        </div>
+      </template>
+
+      <template class="mobile-reply-template">
+        <div class="reply-template-content">
+          <div class="vertical-line"></div>
+          <div class="comment-card">
+            <div class="comment-content">
+              <section class="user-detail">
+                <span class="user-avatar">
+                  <img src="" alt="user avatar" />
+                </span>
+                <span class="user-name"></span>
+                <span class="you-tag hide">you</span>
+                <span class="createdAt"></span>
+                <span class="D-E-Btn hide">
+                  <span class="delete-btn">
+                    <img src="./images/icon-delete.svg" alt="delete button" />
+                    Delete
+                  </span>
+                  <span class="edit-btn">
+                    <img src="./images/icon-edit.svg" alt="edit button" />
+                    Edit
+                  </span>
+                </span>
+                <span class="reply-btn">
+                  <img src="/images/icon-reply.svg" alt="reply button" />
+                  Reply
+                </span>
+              </section>
+
+              <section class="comment"></section>
+
+              <section class="comment-action">
+                <span class="score">
+                  <span class="plus-btn">
+                    <img src="/images/icon-plus.svg" alt="plus button" />
+                  </span>
+                  <span class="score-count"></span>
+                  <span class="minus-btn">
+                    <img src="/images/icon-minus.svg" alt="minus button" />
+                  </span>
+                </span>
+
+                <span class="D-E-Btn hide">
+                  <span class="delete-btn">
+                    <img src="./images/icon-delete.svg" alt="delete button" />
+                    Delete
+                  </span>
+                  <span class="edit-btn">
+                    <img src="./images/icon-edit.svg" alt="edit button" />
+                    Edit
+                  </span>
+                </span>
+
+                <span class="reply-btn">
+                  <img src="/images/icon-reply.svg" alt="reply button" /> Reply
+                </span>
+              </section>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <div class="comment-create-card">
+        <form>
+          <section class="comment-field-section">
+            <textarea
+              name="comment-field"
+              class="comment-field"
+              rows="4"
+              placeholder="Add a comment...."
+            ></textarea>
+          </section>
+
+          <section class="comment-detail-section">
+            <span class="user-avatar">
+              <img
+                src="./images/avatars/image-juliusomo.webp"
+                alt="user-avatar"
+              />
+            </span>
+            <input type="submit" class="send" value="SEND" />
+          </section>
+        </form>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Faizan Shaikh</a>.
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
